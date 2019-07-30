@@ -19,7 +19,7 @@ let configRouter =[
         component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
 ];
-const  contextRouter =require.context('./modles',true,/\.js$/);
+const  contextRouter =require.context('./modules',true,/\.js$/);
 
 contextRouter.keys().map((key)=>{
     console.log(key);
